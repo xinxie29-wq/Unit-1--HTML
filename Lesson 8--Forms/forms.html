@@ -9,7 +9,7 @@
 
 <body>
     <h1>Contact Form</h1>
-    <form action="">
+    <form action="result.html" method="GET">
         <table border="1">
             <!-- Basic Text -->
             <tr>
@@ -46,14 +46,40 @@
             </td>
             <td><textarea name="message" id="message" rows="4"></textarea></td>
             <!-- Radio Button(Multiple Choice) -->
-             <tr>
+            <tr>
                 <td>Grade:</td>
                 <td>
                     <label for=""> <input type="radio" name="grade" value="9">9th</label>
                     <label for=""> <input type="radio" name="grade" value="10">10th</label>
                 </td>
-             </tr>
-            
+            </tr>
+            <!-- Checkbox -->
+            <tr>
+                <td>Grade:</td>
+                <td>
+                   <label for="" type="chechbox"></label>
+                    <label for=""> <input type="radio" name="grade" value="10">10th</label>
+                </td>
+            </tr>
+            <!-- Select(drop down) -->
+            <tr>
+                <td>Favorite Sports</td>
+                <td>
+                    <label for="Sports">Select:</label>
+                    <select name="sports" id="sports">
+                        <option value="" selected disabled>select a sport</option>
+                        <option value="soccer">soccer</option>
+                        <option value="baseball">baseball</option>
+                        <option value="bascketball">bascketball</option>
+                    </select>
+                </td>
+            </tr>
+           <!-- <tr><input type="submit" value="submit">submit</tr> -->
+            <tr>
+               <td><button type="submit" value="submit">submit</button></td> 
+            </tr>
+
+
         </table>
     </form>
 
